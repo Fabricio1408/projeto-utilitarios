@@ -1,0 +1,88 @@
+body{
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h3, h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.container{
+    display: flex;
+    padding: 50px 50px 0 50px;
+
+}
+.calculator{
+    width: 430px;
+    height: 400px;
+    background-color: #242424;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img img{
+    width: 600px;
+}
+.calculator h1{
+    font-size: 50px;
+    font-weight: 800;
+    align-items: center;
+}
+.test{
+    border: 0; 
+    height: 3px;
+    background-color: rgb(1, 131, 12);
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.peso{
+    margin: 10px 0 20px 0;
+}
+.inputs h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #ffff;
+}
+.peso-line{
+    display: flex;
+    justify-content: space-around;
+    background-color: #434343;
+    align-items: center;
+    border-radius: 17px;
+    height: 50px;
+}
+input:focus {
+    outline: none;
+  }
+.fa-solid{
+    font-size: 25px;
+    color: #ffffff;
+}
+.inputs input{
+    width: 200px;
+    background-color: #b3b3b3;
+    height: 45px;
+    border-radius: 18px;
+    border: 0;
+    background-color: transparent;
+    padding: 0 0 0 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+
