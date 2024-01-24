@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,10 @@
     <link rel="stylesheet" href="./assets/CSS/styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <main class="container">
-       <div class="img">
-            <img src="./assets/IMAGES/personal-trainer.svg" alt="Imagem de um personal trainer orientando uma aluna">
-       </div>
-       <section class="calculator">
+        <section class="calculator">
             <div class="titulo">
                 <h1>Calculadora - IMC</h1>
                 <hr class="test">
@@ -25,21 +24,36 @@
                         <span><i class="fa-solid fa-weight-hanging"></i></span>
                         <input type="number" id="peso" placeholder="Ex: 65.4">
                         <h4>Kg</h4>
-                    </div>    
+                    </div>
                 </div>
                 <div class="altura">
                     <h3>Digite sua altura em Metros</h3><span>
-                    <div class="peso-line">
-                        <i class="fa-solid fa-ruler"></i></span>
-                        <input type="number" id="peso" placeholder="Ex: 1.65">
-                        <h4>M</h4>
-                    </div>    
-                </div> 
+                        <div class="peso-line">
+                            <i class="fa-solid fa-ruler"></i>
+                    </span>
+                    <input type="number" id="altura" placeholder="Ex: 1.65">
+                    <h4>M</h4>
+                </div>
             </div>
-            <hr class="test">   
-       </section>
+            </div>
+            <button onclick="calcular()">Calcular IMC:</button>
+
+            <div id="result">Seu IMC é:</div>
+            <div id="desc"></div>
+            <a style="text-decoration: none; color: inherit;" href="https://www.tuasaude.com/imc/" target="_blank">
+                <div id="link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <h4>Saber mais sobre o calculo de IMC</h4>
+                </div>
+            </a>
+
+        </section>
+        <div class="img">
+            <img src="./assets/IMAGES/personal-trainer.svg" alt="Imagem de um personal trainer orientando uma aluna">
+        </div>
     </main>
 
-<script src="./assets/JS/script.js"></script>    
+    <script src="./assets/JS/script.js"></script>
 </body>
+
 </html>
