@@ -21,12 +21,12 @@ function calcular(){
             }
             else if(resu >= 25 && resu <= 29.99){
                 resultado.innerHTML = `Seu IMC é: <strong class="red"> ${resu.toFixed(2)}</strong>.`
-                desc.innerHTML = `Sua classificação IMC mostra que você está em <strong class="red"> Sobre Peso </strong>.`
+                desc.innerHTML = `Sua classificação IMC mostra que você está em <strong class="orange"> Sobre Peso </strong> <i class="fa-regular fa-face-surprise"></i>.`
 
             }
             else{
                 resultado.innerHTML = `Seu IMC é: <strong class="red"> ${resu.toFixed(2)}</strong>.`
-                desc.innerHTML = `Sua classificação IMC mostra que você está em <strong class="red"> Obesidade </strong>.`
+                desc.innerHTML = `Sua classificação IMC mostra que você está em <strong class="red"> Obesidade </strong> <i class="fa-regular fa-face-sad-tear"></i>.`
 
             }
     }
