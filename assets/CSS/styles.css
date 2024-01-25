@@ -15,7 +15,7 @@ h3, h4{
 
 }
 .calculator{
-    width: 430px;
+    width: 500px;
     height: auto;
     background-color: #242424;
     border-radius: 18px;
@@ -26,8 +26,9 @@ h3, h4{
     margin-right: 30px;
 }
 .img img{
-    width: 500px;
+    width: 650px;
     margin-top: 30px;
+    margin-left: 20px;
 }
 .calculator h1{
     font-size: 50px;
@@ -107,16 +108,17 @@ input[type="number"] {
 }
 .green{
     color: rgb(3, 198, 19);
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    align-items: center;
+
+
+}
+.orange{
+    color: rgb(255, 123, 0);
+
 
 }
 .red{
     color: rgb(255, 0, 0);
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    align-items: center;
+
 
 }
 .result h3{
@@ -128,7 +130,7 @@ input[type="number"] {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #desc{
     font-size: 20px;
