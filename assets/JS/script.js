@@ -33,3 +33,27 @@ function calcular(){
 
 
 }
+
+function calcularRegraDeTres() {
+    const valor1 = parseFloat(document.getElementById("valor1").value);
+    const valor2 = parseFloat(document.getElementById("valor2").value);
+    const valor3 = parseFloat(document.getElementById("valor3").value);
+    const resultado = parseFloat(document.getElementById("resultado").value);
+
+    if (isNaN(valor1) || isNaN(valor2) || isNaN(valor3) || isNaN(resultado)) {
+        document.getElementById("resultadoCalculo").innerText = "insira u valor numérico.";
+        return;
+    }
+
+    const resultadoCalculado = (valor3 * valor2) / valor1;
+
+    if (valor1 === 0 || resultadoCalculado === 0) {
+        document.getElementById("resultadoCalculo").innerText = "Não é possível calcular a regra de três com esses valores.";
+        return;
+    }
+
+    const proporcao = resultado / resultadoCalculado;
+
+    document.getElementById("resultadoCalculo").innerText = `Para obter ${resultado} com base em ${valor1}, ${valor2} e ${valor3}, a proporção é aproximadamente ${proporcao.toFixed(2)}.`;
+}
+
