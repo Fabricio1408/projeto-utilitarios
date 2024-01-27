@@ -11,66 +11,108 @@
 </head>
 
 <body>
-    <main class="container">
-        <section class="calculator">
-            <div class="titulo">
-                <h1>Calculadora - IMC</h1>
-                <hr class="test">
-            </div>
-            <div class="inputs">
-                <div class="peso">
-                    <h3>Digite seu peso em Kg</h3>
-                    <div class="peso-line">
-                        <span><i class="fa-solid fa-weight-hanging"></i></span>
-                        <input type="number" id="peso" placeholder="Ex: 65.4">
-                        <h4>Kg</h4>
-                    </div>
-                </div>
-                <div class="altura">
-                    <h3>Digite sua altura em Metros</h3><span>
-                        <div class="peso-line">
-                            <i class="fa-solid fa-ruler"></i>
-                    </span>
-                    <input type="number" id="altura" placeholder="Ex: 1.65">
-                    <h4>M</h4>
-                </div>
-            </div>
-            </div>
-            <button onclick="calcular()">Calcular IMC:</button>
+    <main class="tudo">
 
-            <div id="result">Seu IMC é:</div>
-            <div id="desc"></div>
-            <a style="text-decoration: none; color: inherit;" href="https://www.tuasaude.com/imc/" target="_blank">
+        <section class="container">
+
+            <div class="img">
+                <img src="./assets/IMAGES/undraw_calculator_re_alsc.svg"
+                    alt="Imagem de um personal trainer orientando uma aluna">
+            </div>
+            <section class="calculator">
+                <div class="titulo">
+                    <h1 style="font-size: 60px;">Calculadora</h1>
+                    <hr class="test">
+                </div>
+
+
+                <div class="calculadora">
+                    <div>
+                        <input type="text" id="display" readonly>
+                        <div class="operadores">
+                            <button onclick="appendToDisplay('7')">7</button>
+                            <button onclick="appendToDisplay('8')">8</button>
+                            <button onclick="appendToDisplay('9')">9</button>
+                            <button onclick="appendToDisplay('/')">/</button>
+
+                            <button onclick="appendToDisplay('4')">4</button>
+                            <button onclick="appendToDisplay('5')">5</button>
+                            <button onclick="appendToDisplay('6')">6</button>
+                            <button onclick="appendToDisplay('*')">*</button>
+
+                            <button onclick="appendToDisplay('1')">1</button>
+                            <button onclick="appendToDisplay('2')">2</button>
+                            <button onclick="appendToDisplay('3')">3</button>
+                            <button onclick="appendToDisplay('-')">-</button>
+
+                            <button onclick="appendToDisplay('0')">0</button>
+                            <button onclick="appendToDisplay('.')">.</button>
+                            <button onclick="calculate()">=</button>
+                            <button onclick="appendToDisplay('+')">+</button>
+                        </div>
+                    </div>
+                    <button id="zerar" onclick="clearDisplay()">Zerar</button>
+
+                </div>
+
                 <div id="link">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    <h4>Saber mais sobre o calculo de IMC</h4>
+                    <h4>Calculadora mais completa</h4>
                 </div>
-            </a>
+                </a>
+
+            </section>
 
         </section>
-        <div class="img">
-            <img src="./assets/IMAGES/personal-trainer.svg" alt="Imagem de um personal trainer orientando uma aluna">
-        </div>
+
+
+
+        <section class="container">
+            <section class="calculator">
+                <div class="titulo">
+                    <h1>Calculadora - IMC</h1>
+                    <hr class="test">
+                </div>
+                <div class="inputs">
+                    <div class="peso">
+                        <h3>Digite seu peso em Kg</h3>
+                        <div class="peso-line">
+                            <span><i class="fa-solid fa-weight-hanging"></i></span>
+                            <input type="number" id="peso" placeholder="Ex: 65.4">
+                            <h4>Kg</h4>
+                        </div>
+                    </div>
+                    <div class="altura">
+                        <h3>Digite sua altura em Metros</h3><span>
+                            <div class="peso-line">
+                                <i class="fa-solid fa-ruler"></i>
+                        </span>
+                        <input type="number" id="altura" placeholder="Ex: 1.65">
+                        <h4>M</h4>
+                    </div>
+                </div>
+                </div>
+                <button class="botao-imc" onclick="calcular()">Calcular IMC:</button>
+
+                <div id="result">Seu IMC é:</div>
+                <div id="desc"></div>
+                <a style="text-decoration: none; color: inherit;" href="https://www.tuasaude.com/imc/" target="_blank">
+                    <div id="link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <h4>Saber mais sobre o calculo de IMC</h4>
+                    </div>
+                </a>
+
+            </section>
+            <div class="img">
+                <img src="./assets/IMAGES/personal-trainer.svg"
+                    alt="Imagem de um personal trainer orientando uma aluna">
+            </div>
+        </section>
+
+
+
     </main>
-
-<section>
-    <h2>Calculadora de Regra de Três Simples - soite utilitarios</h2>
-
-<form id="regraDeTresForm">
-    <input type="number" id="valor1" placeholder="Valor 1 comparativo" required>
-
-    <input type="number" id="valor2" placeholder="Valor 2 comparativo" required>
-
-    <input type="number" id="valor3" placeholder="Valor 3 que quero comparar" required>
-
-    <input type="number" id="resultado" placeholder="Resultado Desejado" required>
-
-    <button type="button" onclick="calcularRegraDeTres()">Calcular</button>
-</form>
-
-<p id="resultadoCalculo"></p>
-</section>
-    
     <script src="./assets/JS/script.js"></script>
 </body>
 
