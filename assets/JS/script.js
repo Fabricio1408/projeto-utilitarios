@@ -57,10 +57,3 @@ function clearDisplay() {
 
 
 
-
-function atualizarPagina() {
-    location.reload(true); 
-  }
-
-
-  setInterval(atualizarPagina, 10000);
