@@ -1,50 +1,56 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Orbitron", sans-serif;
 }
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding-top: 2rem;
-  background-color: black;
-  height: 100vh;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    background-color: black;
+    height: 100vh;
 }
-.container h1{
-  color: #175cff; 
-  font-size: 55px;
-  font-weight: bold;
+
+.container h1 {
+    color: #175cff;
+    font-size: 55px;
+    font-weight: bold;
 }
-.timer{
-  display: flex;
-  font-size: 55px;
-  color: #333;
+
+.timer {
+    display: flex;
+    font-size: 55px;
+    color: #333;
 }
-.timer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  color: #172953;
-  min-width: 900px;
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #172953;
+    min-width: 900px;
 }
-.separator{
-  padding: 0 10px;
-  color: #525763;
- }
-#milliseconds{
+
+.separator {
+    padding: 0 10px;
+    color: #525763;
+}
+
+#milliseconds {
     font-size: 20px;
     color: #525763;
 }
-.buttons{
+
+.buttons {
     display: flex;
     gap: 15px;
 }
 
-.btn{
+.btn {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
@@ -53,13 +59,17 @@
     border: 1px solid #ccc;
     transition: all 0.2s ease-in-out;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.06);
 }
-#startbtn{
+
+#startbtn {
     color: white;
     background-color: #175cff;
 }
-#pausebtn, #resumebtn{
+
+#pausebtn,
+#resumebtn {
     display: none;
 }
