@@ -24,5 +24,8 @@ button.addEventListener('click', () => {
                 alert('Cidade inválida😞')
             }
         })
+    .catch(error => {
+            console.error('Erro ao obter dados da API:', error);
+        });
        
 });
