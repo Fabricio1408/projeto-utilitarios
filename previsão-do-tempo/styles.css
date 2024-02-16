@@ -46,6 +46,7 @@ button i {
     margin-top: 10px;
     justify-content: space-between;
     word-break: break-word;
+    display: none;
 }
 img{
     min-width: 120px;
